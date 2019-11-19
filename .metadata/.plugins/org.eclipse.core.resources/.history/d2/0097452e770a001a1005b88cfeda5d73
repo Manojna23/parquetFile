@@ -1,0 +1,16 @@
+package com.parquet;
+
+import com.parquet.dao.Team;
+
+public class TrialRunnable implements Runnable {
+
+	private List<Team> teams;
+	private String str;
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

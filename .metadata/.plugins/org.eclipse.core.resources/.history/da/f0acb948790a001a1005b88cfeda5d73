@@ -1,0 +1,27 @@
+package com.parquet;
+
+import java.util.List;
+
+import org.apache.parquet.hadoop.ParquetWriter;
+
+import com.parquet.dao.Team;
+
+public class ParquetThreadWriter implements Runnable{
+
+	private List<List<Team>> teamList;
+	private ParquetWriter<Team> writer;
+	
+	public ParquetThreadWriter(List<List<Team>> teamList, ParquetWriter<Team> writer) {
+		super();
+		this.teamList = teamList;
+		this.writer = writer;
+	}
+
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

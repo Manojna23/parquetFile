@@ -1,0 +1,30 @@
+package com.parquet;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.parquet.avro.AvroParquetWriter;
+import org.apache.parquet.hadoop.ParquetWriter;
+
+import com.parquet.dao.Team;
+
+/**
+ * Hello world!
+ *
+ */
+public class ParquetApp 
+{
+    public static void main( String[] args )
+    {
+        Team team1 = new Team("team1",1);
+        Team team2 = new Team("HIFI",2);
+        List<Team> teams = new ArrayList<>();
+        for(int i = 0; i<100; i++) {
+        	teams.add(team1);
+        }
+        List<List<Team>> teamList= new ArrayList<>();
+        int initialSize = teams.size();
+        
+        try(ParquetWriter<Team> writer = new AvroParquetWriter.<Team>builder().with)
+    }
+}

@@ -1,0 +1,17 @@
+package com.parquet;
+
+import com.parquet.dao.Team;
+
+/**
+ * Hello world!
+ *
+ */
+public class ParquetApp 
+{
+    public static void main( String[] args )
+    {
+        Team team = new Team("team1",1);
+        Team team2 = new Team("HIFI",2);
+        List<Team> teams = new ArrayList<>();
+    }
+}

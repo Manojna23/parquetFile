@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.parquet.App&apos; to &apos;ParquetApp&apos;&#x0D;&#x0A;- Original project: &apos;parquet&apos;&#x0D;&#x0A;- Original element: &apos;com.parquet.App&apos;&#x0D;&#x0A;- Renamed element: &apos;com.parquet.ParquetApp&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;App&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.parquet{App.java[App" matchStrategy="1" name="ParquetApp" qualified="false" references="true" similarDeclarations="false" stamp="1573885700318" textual="false" version="1.0"/>
+</session>

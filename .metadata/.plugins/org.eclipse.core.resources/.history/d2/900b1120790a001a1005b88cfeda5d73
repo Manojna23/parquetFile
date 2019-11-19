@@ -1,0 +1,22 @@
+package com.parquet;
+
+import java.util.List;
+
+import com.parquet.dao.Team;
+
+public class ParquetThreadWriter implements Runnable{
+
+	private List<List<Team>> teamList;
+	
+	public ParquetThreadWriter(List<List<Team>> teamList) {
+		super();
+		this.teamList = teamList;
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

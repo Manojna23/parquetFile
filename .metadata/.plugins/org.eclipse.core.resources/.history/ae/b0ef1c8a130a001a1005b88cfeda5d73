@@ -1,0 +1,22 @@
+package com.parquet;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.parquet.dao.Team;
+
+/**
+ * Hello world!
+ *
+ */
+public class ParquetApp 
+{
+    public static void main( String[] args )
+    {
+        Team team1 = new Team("team1",1);
+        Team team2 = new Team("HIFI",2);
+        List<Team> teams = new ArrayList<>();
+        teams.add(team1);
+        teams.add(team2);
+    }
+}

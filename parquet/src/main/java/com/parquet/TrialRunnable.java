@@ -1,0 +1,27 @@
+package com.parquet;
+
+import java.util.List;
+
+import com.parquet.dao.Team;
+
+public class TrialRunnable implements Runnable {
+
+	private List<Team> teams;
+	private String str;
+	
+	public TrialRunnable(List<Team> teams, String str) {
+		super();
+		this.teams = teams;
+		this.str = str;
+	}
+
+	@Override
+	public void run() {
+		System.out.println("Reached here for thread:"+Thread.currentThread().getName());
+		for(Team team:teams) {
+			System.out.println("From Thread:"+Thread.currentThread().getName()+ " string:"+str);
+		}
+		
+	}
+
+}
